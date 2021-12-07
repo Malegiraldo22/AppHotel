@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hotel - Reservaciones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funRes.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <h1>Consulta Reservaciones</h1>
+    <div id="resultado"></div>
+    <button onclick="consulta()">Consultar</button><br>
+    
+    <div>
+        <input type="hidden" id="idReservation" placeholder="name" required>
+        <input type="text" id="devolutionDate" placeholder="YYYY-mm-dd" reqired>
+        <input type="list" id="client" placeholder="client id" reqired> <!--Buscar como poblar la lista-->
+        <input type="list" id="room" placeholder="room id" reqired>
+    </div>
+    <button id="guardar" onclick="guardarInfo()">Guardar Reservación</button>
+    <button id="editar" onclick="editar()">Editar Reservación</button>
+    <a href="score.html">Calificación reserva</a>
+    <img class="reservacion" src="img/res.jpg" alt="Buzón" width="282" height="282">
+    <div>
+        <p>Nota: La fecha de inicio la genera el sistema</p>
+        <a href="index.html">Volver a inicio</a>
+    </div>
+</body>
+</html>

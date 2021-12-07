@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hotel - Clientes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funCliente.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
+</head>
+<body>
+    <h1>Consulta Clientes</h1>
+    <div id="resultado"></div>
+    <button onclick="consulta()">Consultar</button><br>
+    
+    <div>
+        <input type="hidden" id="idClient" placeholder="name" required>
+        <input type="text" id="name" placeholder="name" maxlength="250" reqired>
+        <input type="text" id="email" placeholder="email" maxlength="45" reqired>
+        <input type="password" id="password" placeholder="password" maxlength="45" reqired>
+        <input type="number" id="age" placeholder="age">
+    </div>
+    <button id="guardar" onclick="guardarInfo()">Guardar Cliente</button>
+    <button id="editar" onclick="editar()">Editar Cliente</button>
+    <img class="cliente" src="img/cliente.jpg" alt="Cliente" width="245" height="307">
+    <div>
+        <a href="index.html">Volver a inicio</a>
+    </div>
+    
+</body>
+</html>

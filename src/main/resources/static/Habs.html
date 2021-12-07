@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hotel - Habitaciones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funHab.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
+</head>
+<body>
+    <h1>Consulta Habitaciones</h1>
+    <div id="resultado"></div>
+    <button onclick="consulta()">Consultar</button><br>
+    
+    <div>
+        <input type="hidden" id="id" placeholder="name" required>
+        <input type="text" id="name" placeholder="name" maxlength="45" reqired>
+        <input type="text" id="hotel" placeholder="hotel" maxlength="45" reqired>
+        <input type="number" id="stars" placeholder="stars" maxlength="1" reqired>
+        <input type="text" id="description" placeholder="description" maxlength="250" reqired>
+        <input list="categories" id="category" placeholder="id category" reqired> <!--Buscar como poblar esa lista--> 
+        <datalist id="categoryList"></datalist>
+    </div>
+    <button id="guardar" onclick="guardarInfo()">Guardar Habitación</button>
+    <button id="editar" onclick="editar()">Editar Habitación</button>
+    <img class="habitacion" src="img/hab.jpg" alt="Habitación" width="280" height="280">
+    <div>
+        <a href="index.html">Volver a inicio</a>
+    </div>
+</body>
+</html>

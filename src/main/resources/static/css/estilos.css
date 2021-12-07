@@ -1,0 +1,121 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+	background-color: #F1BE6C;
+}
+
+h1{
+	color: #594322;
+	font-size: 24px;
+	text-align: center;
+}
+
+h2{
+	color:#594322;
+	font-size: 20px;
+}
+
+a{
+	color: #594322;
+	font-size: 16px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+div.container unauthenticated{
+	text-align: left;
+}
+
+div.container authenticated{
+	text-align: left;
+}
+
+button{
+	background-color: #F17C6C;
+	border: none;
+	border-radius: 15px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 16px 8px;
+	cursor: pointer;
+}
+
+input{
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+Table{
+	border-collapse: collapse;
+}
+
+img.vista-hotel{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -12em;
+}
+
+img.admin-img{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -2em;
+}
+
+img.category{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -2em;
+	left: -12em;
+}
+
+img.habitacion{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -2em;
+	left: -6em;
+}
+
+img.cliente{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -2em;
+	left: -5em;
+}
+
+img.mensajes{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -2em;
+	left: -5em;
+}
+
+img.reservacion{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	top: -2em;
+	left: -5em;
+}

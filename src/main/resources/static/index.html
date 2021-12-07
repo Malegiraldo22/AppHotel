@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido App Hotel</title>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
+</head>
+<body>
+    <h1>Bienvenido a la AppHotel</h1>
+    <div class="container unauthenticated">
+        Iniciar sesión con GitHub:
+        <a href="/oauth2/authorization/github">Click aquí</a>
+    </div>
+    <div class="container authenticated" style="display:none">
+        Autenticado como : <span id="user"></span>
+    </div>
+    <h2>Menú principal</h1>
+    <ul>
+        <li><a href="categoria.html">Categorías</a></li>
+        <li><a href="Habs.html">Habitaciones</a></li>
+        <li><a href="Clientes.html">Clientes</a></li>
+        <li><a href="Msj.html">Mensajes</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="admin.html">Administradores</a></li>
+    </ul>
+
+    <img class="vista-hotel" src="img\City Contemporary Hotel At Sunset.jpg" alt="Vista hotel" width="536" height="291">
+
+</body>
+
+<script type="text/javascript">
+    $.get("/user", function(data){
+        $("#user").html(data.name);
+        $(".unauthenticated").hide()
+        $(".authenticated").show()
+    });
+</script>
+</html>

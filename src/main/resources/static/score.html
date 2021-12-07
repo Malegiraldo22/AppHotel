@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hotel - Calificación reserva</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funSco.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body></body>
+    <h1>Calificación de Reservaciones</h1>
+    <div id="resultado"></div>
+    <button onclick="consulta()">Consultar</button><br>
+    
+    <div>
+        <input type="hidden" id="idScore" placeholder="name" required>
+        <input type="number" id="stars" placeholder="calificación" maxlength="1" pattern="[0-5]{1} required">
+        <input type="text" id="messageText" placeholder="Mensaje" maxlength="250" required>
+        <input type="text" id="idReservation" placeholder="Reservation id" reqired>
+    </div>
+    <button id="guardar" onclick="guardarInfo()">Guardar Reservación</button>
+    <button id="editar" onclick="editar()">Editar Reservación</button>
+    <div>
+        <a href="reservaciones.html">Volver a reservaciones</a>
+    </div>
+</body>
+</html>
